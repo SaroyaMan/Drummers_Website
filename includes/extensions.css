@@ -1,0 +1,68 @@
+/*about.html*/
+.creditsHeadline {margin: 25px 0 25px 0;}
+.creditMyselfImg {margin-bottom: 20px;}
+
+/*contact.html*/
+.wrapperTextArea {margin: -25px 120px;}
+
+/*cymbals.html*/
+.underline {text-decoration: underline;}
+.openHiHatAudio {display:inline-block;  margin-top: 5px; }
+.closeHiHatAudio {display:inline-block; position: absolute; margin-right: 100px;  margin-top: 5px;}
+.openHiHatAudioTag {color: seagreen;}
+.closeHiHatAudioTag {color: seagreen; position: relative; left: -270px;}
+
+/*drumkit1.html*/
+.myDrumSetTag {margin: 0 100px 0 0; display: block;font-size: .83em;font-weight: bold;}
+.enjoyWatching {font-weight: bold; margin-right: 20px;}
+
+/*drumkit2.html*/
+.rolandPicTag {margin: 0 5px 0 0; display: block;font-size: .83em;font-weight: bold;}
+.yamahaPicTag {margin: -10px 100px 0 0; display: block;font-size: .83em;font-weight: bold;}
+
+/*drumkit3.html*/
+.africanDrumSong {display:block; position:fixed; left:0; top:0}
+.africanDrawedDrums {display: block; position:absolute; right: 400px; top:15px;}
+.djambeDrumPicTag {margin: 0 45px 0 0; display: block;font-size: .83em;font-weight: bold;}
+.africanLotsPeoplePicTag {margin: 0px 45px 20px 0;display: block;font-size: .83em;font-weight: bold;}
+
+/*drumkit4.html*/
+.drumsAppPic {display: block; position:absolute; right: 400px; top:0;}
+.drumsPadPicTag {margin: -30px 40px 0 0; display: block;font-size: .83em;font-weight: bold;}
+.drumsSoftwarePicTag{margin: 0px 5px 20px 0; display: block;font-size: .83em;font-weight: bold;}
+
+
+/*drumlearn.html*/
+.diffPartsPicTag {margin: 5px 30px 0 0; font-size: 82%; font-weight: bold;}
+.diffPartsPicTagEX1 {margin-right:170px;}
+.diffPartsPicTagEX2 {margin-right: 120px}
+.bolder {font-weight: bold;}
+.redder {color: red;}
+
+/*drums.html*/
+.floorTomAudio {display:inline-block;  margin-top: 5px;}
+.tomTomsAudio {display:inline-block; position: absolute; margin-right: 100px;  margin-top: 5px;}
+
+/*history.html*/
+.evolutionPic {margin: -40px 0 -10px 0;}
+.africanDrumsSoundPic {margin-right: 94px;}
+.africanDrumsPicTag {margin-top: -5px; margin-right: 94px; display: block;font-size: .83em;font-weight: bold;}
+.drumsWinPicTag {margin: 0 70px 0 0; display: block; font-size: .83em;font-weight: bold;}
+
+/*index.html*/
+.mainVideo {width:700px; margin: 45px 30px 10px 5px;}
+.aboutTable {display: block; margin-right: 10px;}
+.aboutTablePic {position: relative; right: 10px; }
+
+/*otherdrums.html*/
+.funnyDrumsPicTag {margin: 0 30px 15px 0; display: inline-block; font-size: .83em;font-weight: bold;}
+.funnyDrumsPicTag2 {margin-right:16em;}
+.odedKafriVideo {margin: 0 0px 20px 0; width: 605px; height: 315px;}
+.odedKafriTag {margin: -10px 100px 20px 0; display: block; font-size: .83em;font-weight: bold;}
+
+/* ------------------------------------------
+        Purpose: Second CSS File - http://aux.shenkar.ac.il/656/group59/
+        Version: 0.1
+        Author: Yoav Saroya
+        Last Update: 21/08/2016
+        -----------------------------------------*/

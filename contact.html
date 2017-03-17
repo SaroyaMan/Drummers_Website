@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content = "contact with Drums website">
+        <script src="includes/menu.js"></script>
+        <script src="ckeditor/ckeditor.js"></script>
+
+        <link rel="stylesheet" href="includes/index.css">
+        <link rel="stylesheet" href="includes/extensions.css">
+        <link rel="icon" href="images/logos/drum.png">
+        <title>Drums - Contact</title>
+    </head>
+    <body onload="verify()">
+        <div id="wrapper">
+            <header>
+                <script> document.write(mainHeadline);</script>
+                <script> document.write(menu);</script>
+            </header>
+            <div id="content">
+                <nav>
+                    <script>document.write(buttons);</script>
+                </nav>
+                <article>
+                    <section class="text">
+                        <h2 class = "subHeadLine">צור קשר</h2>
+                        <form action= "#" >
+                            <p>כל השדות הן שדות חובה*</p>
+                            <label class="field" for=name>שם מלא</label><input type=text name=name id ='name' placeholder="הכנס שם מלא" value="" title='נא הכנס שם מלא' required><br>
+                            <label class="field" for=email>אימייל</label><input type=email name=email id='email' placeholder="הכנס כתובת אימייל" value="" title='נא הכנס כתובת אימייל' required><br>
+                            <label class="field" for=sub>נושא</label><select name=select id='sub'>
+                                <option>למידת תופים
+                                <option>מידע מוטעה
+                                <option>תקלה באתר
+                                <option>פרטים נוספים
+                                <option selected>אחר
+                            </select><br>
+                            <p class="field"><label for=text>תוכן ההודעה</label></p>
+                            <div class="wrapperTextArea">
+                                <textarea  name="editor1" id="editor1" rows="10" cols="80"></textarea>
+                            </div>
+                            <input type=submit value="שלח" class="formButton">
+                            <input type=reset  onclick="resetTextField(CKEDITOR);" value="נקה טופס" class="formButton">
+                        </form>
+                    </section>
+                </article>
+            </div>
+            <footer>
+                <span class="credit">כל הזכויות שמורות ליואב סרויה © | שנקר 2016 </span>
+                <img class="credit" src="images/logos/sticks.png" title="מקלות תיפוף">
+                <script>document.write(logos);</script>
+            </footer>
+        </div>
+        <script>
+            CKEDITOR.replace('editor1');
+            CKEDITOR.config.width = '110%';   // CSS unit (percent).
+            CKEDITOR.config.height = '60%';
+            CKEDITOR.config.resize_enabled = false;
+            CKEDITOR.config.removePlugins = 'maximize';
+            CKEDITOR.config.removePlugins = 'about';
+        </script>
+    </body>
+</html>

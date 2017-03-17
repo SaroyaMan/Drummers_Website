@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content = "amazing drum photos">
+
+        <script src="includes/jqueryGallery.js"></script>
+        <script src="galleria/galleria-1.4.2.min.js"></script>
+
+        <script src="includes/menu.js"></script>
+        <link rel="stylesheet" href="includes/index.css">
+        <link rel="stylesheet" href="includes/extensions.css">
+        <link rel="icon" href="images/logos/drum.png">
+        <title>Drums - Gallery</title>
+    </head>
+    <body onload="verify()">
+        <div id="wrapper">
+            <header>
+                <script> document.write(mainHeadline);</script>
+                <script> document.write(menu);</script>
+            </header>
+            <div id="content">
+                <nav>
+                    <script>document.write(buttons);</script>
+                </nav>
+                <article>
+                    <div class="galleria">
+                        <img src="images/gallery/myself.png" title="מתופף על מערכת התופים שלי">
+                        <img src="images/gallery/myself2.png" title="מתופף על מערכת התופים שלי">
+                        <img src="images/gallery/drumsdark.png" title="סט התופים הישן שלי">
+                        <img src="images/gallery/snare.png" title="סנר">
+                        <img src="images/gallery/myself3.png" title="מתופף על מערכת התופים שלי">
+                        <img src="images/gallery/myself4.png" title="מערכת התופים האלקטרונית שלי">
+                        <img src="images/gallery/myself5.png" title="פד האימונים שלי לצורך שיפור המהירות">
+                        <img src="images/gallery/skeleton.png" title="גולגולת מתופפת.">
+                        <img src="images/gallery/Silverstar_l.png" title="התופים שאותם אני מתכנן לרכוש בעתיד">
+                        <img src="images/gallery/drumsview.png" title="לתופף על רקע יפה בחיק הטבע">
+                        <img src="images/gallery/amazingdrums.png" title="סט התופים של האיש והאגדה: תומאס לאנג">
+                        <img src="images/gallery/livedrummer.png" title="הופעה מנקודת מבטו של המתופף">
+                    </div>
+                    <script>
+                        Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+                        Galleria.configure({transition: 'fade', fullscreenDoubleTap: true, lightbox: true, overlayBackground: '#f0f0f5',
+                            transitionSpeed: 800});
+                        Galleria.run('.galleria', {autoplay: 2500}); // will move forward every 2 seconds
+                    </script>
+                    <br>
+                </article>
+            </div>
+            <footer>
+                <span class="credit">כל הזכויות שמורות ליואב סרויה © | שנקר 2016 </span>
+                <img class="credit" src="images/logos/sticks.png" title="מקלות תיפוף">
+                <script>document.write(logos);</script>
+            </footer>
+        </div>
+    </body>
+</html>

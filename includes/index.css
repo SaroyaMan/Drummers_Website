@@ -1,0 +1,464 @@
+@import url(https://fonts.googleapis.com/css?family=Arimo&subset=hebrew,latin);
+
+*:not(p):not(article):not(nav):not(h2):not(h4)
+{
+    margin: 0;
+    padding: 0;
+}
+
+html { height : 100%; } 
+
+a {color:blue; text-decoration: none;}      /* unvisited link */
+a:visited {color:blue;}  /* visited link */
+a:hover {color:crimson;}  /* mouse over link */
+a:active {color:#0000FF;}  /* selected link */
+
+aside, section,  header, footer
+{
+    display: block;
+}
+
+#content
+{
+    position: relative;
+    background-color: rgba(128,128,128,0.6);
+}
+
+.imager
+{
+    display:block;
+    margin: 15px auto 0 auto;
+    border-radius: 40px 40px 0 40px;
+}
+
+.bord
+{
+    box-shadow:0px 0px 20px black; 
+    border: 1px solid black;
+}
+
+header
+{
+
+}
+
+header::after
+{
+    content: "";
+    background: url(../images/b.png) no-repeat;
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+
+article
+{
+    display: inline-block;
+    position: relative;
+    padding-left: 5px;
+    margin-right: -8px;
+    background-color: rgba(245,245,245,0.8);
+    width: 815px;
+    right: 4px;
+}
+
+nav
+{
+    display: inline-block;
+    position: relative;
+    width: 180px;
+    vertical-align: top;
+}
+
+footer
+{
+    font-size: 15px;
+    color: white;
+    background: linear-gradient(-90deg, transparent,darkkhaki,darkgoldenrod,black);
+    font-size: medium;
+}
+
+body
+{
+    direction: rtl;
+    background-repeat: no-repeat ; 
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family:  'Arimo';
+}
+
+#wrapper
+{
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border: silver solid 2px;
+    border-radius: 10px;
+}
+
+#wrapper:before {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: -15px;
+    left: -26px;
+    right: -26px;
+    bottom: -6px;
+    border: 27px solid rgba(215,215,215,0.4);
+    border-radius: 10px;
+    
+    border-top: 13px solid rgba(215,215,215,0.4);
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    
+    border-bottom: 9px solid rgba(215,215,215,0.4);
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+#menu
+{
+    list-style-type: none;
+    font-size: 22px;
+}
+
+#menu li
+{
+    display: inline-block;
+    position: relative;
+    right: 3px;
+    max-width: 150px;
+}
+
+#menu li a
+{
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    display:block;
+    font-weight: normal;
+    width: 120px;
+    color: black;
+    margin-right: 2px;
+
+    background: linear-gradient(230deg, ghostwhite, white, gray,#404040);
+}
+
+#menu > li:hover >a{background: linear-gradient(230deg, #FFB266, #FFB266,#FFB266, #404040);}
+
+#menu li a:hover
+{
+    background: linear-gradient(230deg, #FFB266, #FFB266,#FFB266, #404040);
+}
+
+#submenu
+{
+    position: absolute;
+    display: none;
+    right: -6px;
+    list-style: none;
+    z-index: 2;
+}
+
+#submenu2
+{
+    position: absolute;
+    display: none;
+    right: -6px;
+    list-style: none;
+    z-index: 2;
+}
+
+
+#submenu li a
+{
+    background: #F6F5F5;
+}
+
+#submenu2 li a
+{
+    background: #F6F5F5;
+}
+
+#menu li:hover #submenu
+{
+    display: block;
+    left: 15px;
+}
+
+#menu li:hover #submenu2
+{
+    display: block;
+    left: 15px;
+}
+
+#submenu li a:hover 
+{
+    font-weight: bolder !important;
+    background: #F6F5F5;
+}
+
+
+#submenu2 li a:hover
+{
+    font-weight: bolder !important;
+    background: #F6F5F5;
+}
+
+
+.mainHeadline
+{
+    display: inline-block;
+    font-size: 80px;
+    text-align: center;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px yellow, 0 0 30px red, 0 0 40px yellow, 0 0 55px orange, 0 0 75px orange;
+}
+
+.mainHeadlineLink
+{
+    color: darkred !important;
+}
+
+.text {font-size: large; margin-right: 15px; margin-left: 10px;}
+
+.galleria {width: 800px; height: 650px; margin: 0 auto;}
+.galleria img { border-radius : 10% ; }
+.galleria-container{background-color: transparent;}
+
+.butt
+{
+    margin-bottom: 6px;
+    background-color: maroon;
+    outline:none;
+    color: white;
+    height: 30px;
+    width: 80px;
+    border-radius:10px;
+}
+
+#answer
+{
+    display:none;
+    position: relative;
+    color: red;
+}
+
+.field
+{
+    width : 100px ; 
+    display : inline-block ; 
+    margin :10px ; 
+}
+
+.formButton
+{
+    background-color: darkkhaki;
+    color: white;
+    height: 30px;
+    width: 80px;
+    border-radius:10px;
+    margin-top: 60px;
+    margin-bottom: 15px;
+    outline:none;
+}
+
+.videoWrapper
+{
+
+    margin: 0 100px 10px 5px;
+    width: 600px;
+    height: 310px;
+
+    box-shadow:0px 0px 20px black; 
+    border-radius: 23px 23px 0 23px;
+    border: 6px black solid;
+    overflow: hidden;
+}
+
+.noted
+{
+    display:block;
+    padding-top: 5px;
+    font-size: 15px;
+}
+
+#submenuSide
+{
+    font-size: large;
+    list-style-type: none;  
+    margin: 0;
+    padding: 0;
+    width: 180px;
+    background-color: rgba(224,224,224,0.7);
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#submenuSide li a
+{
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+}
+
+#submenuSide li a:hover
+{
+    font-weight: bolder;
+    text-decoration: underline;
+    color: white;
+}
+
+
+#submenuSide2
+{
+    font-size: large;
+    list-style-type: none;  
+    margin: 0;
+    padding: 0;
+    width: 180px;
+    background-color: rgba(224,224,224,0.7);
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#submenuSide2 li a
+{
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+}
+
+#submenuSide2 li a:hover
+{
+    font-weight: bolder;
+    text-decoration: underline;
+    color: white;
+}
+
+.logo
+{
+    display:inline-block;
+    position: relative;
+    right: 215px;
+}
+
+.credit {display:inline-block; position: relative; left: -150px;}
+
+.subHeadLine { color:peru;}
+
+.partExplain {margin:  -20px 0 0 0;}
+
+.soundTest {display: block; margin-top: 5px;}
+
+audio {border: 1px solid grey;}
+
+blockquote {
+    direction: ltr;
+    text-align: center;
+    font-size: x-large;
+    font-style: italic;
+    width: 750px;
+    right: 25px;
+    padding: 0.35em 40px;
+    position: relative;
+    color: white;
+    background-color: #584D4D;
+    border-radius: 15px;
+}
+
+blockquote:before {
+    display: block;
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -30px;
+    top: -40px;
+    color: #7a7a7a;
+}
+
+blockquote:after {
+    display: block;
+    padding-left: 10px;
+    content: "\201D";
+    font-size: 80px;
+    position: absolute;
+    right: 0px;
+    bottom: -75px;
+    color: #7a7a7a;
+}
+
+
+th{text-align:right;}
+
+.column{color: #7E8177 !important;}
+
+.column:hover {color: black !important;}
+
+
+.linked{ 
+    opacity: 0.7; 
+    border: 1px solid black;
+    border-radius: 10px;
+} 
+
+.linked:hover { opacity: 1; }
+
+.chback
+{
+    display: block;
+    width: 181px;
+    height: 80px;
+    font-size: 110%;
+
+    background: rgba(161,171,145,0.8);
+    color: white;
+    outline:none;
+}
+
+.chback:hover {
+    text-decoration: underline;
+    background: #003333;
+}
+
+
+::-moz-selection {
+    color: white;
+    background: #8D0000;
+}
+::selection {
+    color: white;
+    background: #8D0000;
+}
+
+.lister {position: relative; right: 30px; top:-15px; list-style-image: url('../images/list.png');}
+
+
+.mainSticks
+{
+    display: inline-block;
+    position: relative;
+}
+
+.ic
+{
+    display: inline-block;
+    position: relative;
+    right: 6px;
+    top: 3px;
+}
+
+/* ------------------------------------------
+        Purpose: Main CSS File - http://aux.shenkar.ac.il/656/group59/
+        Version: 0.2
+        Author: Yoav Saroya
+        Last Update: 21/08/2016
+        -----------------------------------------*/
